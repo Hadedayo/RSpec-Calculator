@@ -7,6 +7,10 @@ describe "CalcEngine" do
     @calc = CalcEngine.new
   end
 
+  after(:each) do
+    puts "This is after each test"
+  end
+
   it "should correctly add two numbers" do
     expect(@calc.add(1,2)).to eq 3
   end
